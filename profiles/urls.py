@@ -22,7 +22,7 @@ redirect. If you don't use that name, remember to explicitly pass
 
 """
 
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 
 from profiles import views
 
