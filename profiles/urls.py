@@ -22,7 +22,7 @@ redirect. If you don't use that name, remember to explicitly pass
 
 """
 
-from django.conf.urls.defaults import *
+from django.conf.urls.defaults import patterns, url
 
 from profiles import views
 
@@ -39,6 +39,6 @@ urlpatterns = patterns('',
                            name='profiles_profile_detail'),
                        url(r'^$',
                            views.ProfileList.as_view(
-                                template_name='profiles/profile_list.html'),
+                               template_name='profiles/profile_list.html'),
                            name='profiles_profile_list'),
                        )
